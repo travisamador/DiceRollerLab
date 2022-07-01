@@ -142,5 +142,9 @@ static string Totals(int sum, int sides)
     {
         response = d6Totals[sum];
     }
+    if (d6Totals.ContainsKey(sum) && sides == 20)
+    {
+        response = d20Totals[sum];
+    }
     return response;
 }
